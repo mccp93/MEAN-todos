@@ -1,0 +1,19 @@
+{
+  "name": "mean-todos",
+  "version": "1.0.0",
+  "description": "simple todo app",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccroryp/MEAN-todos.git"
+  },
+  "author": "Paul McCrory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mccroryp/MEAN-todos/issues"
+  },
+  "homepage": "https://github.com/mccroryp/MEAN-todos#readme"
+}
