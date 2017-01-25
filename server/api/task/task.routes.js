@@ -1,7 +1,15 @@
 const router = require('express').Router();
+const controller = require('./task.controller');
 
-router.get('/', function(req, res, next){
-    res.send("Hello, world @ tasks");
-});
+router.param('id', controller.params);
+
+router.route('/')
+    .get(controller.get)
+    .post(controller.post);
+
+router.route('/:id')
+    .get(controller.getOne)
+    .put(controller.put)
+    .delete(controller.delete);
 
 module.exports = router;

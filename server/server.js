@@ -5,6 +5,12 @@ const index_routes = require('./routes/index.routes');
 const api_routes = require('./api/api.routes');
 const app = express();
 
+// if !production 
+require('dotenv').config();
+
+// Database setup.
+require('mongoose').connect(process.env.DB_URI);
+
 // Middleware Setup
 require('./middleware/app-middleware')(app);
 
