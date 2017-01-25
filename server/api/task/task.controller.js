@@ -52,11 +52,11 @@ exports.post = function (req, res, next) {
 
 exports.put = function(req, res, next){
     var update = req.body;
-    var post = req.post;
+    var task = req.task;
 
-    _.merge(post, update);
+    _.merge(task, update);
 
-    post.save(function(err, saved){
+    task.save(function(err, saved){
         if(err){
             next(err);
         }else{
