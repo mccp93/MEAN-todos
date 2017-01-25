@@ -4,7 +4,8 @@
   "description": "simple todo app",
   "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "test": "",
+    "start" : "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/mccroryp/MEAN-todos/issues"
   },
-  "homepage": "https://github.com/mccroryp/MEAN-todos#readme"
+  "homepage": "https://github.com/mccroryp/MEAN-todos#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.8",
+    "dotenv" : "*"
+  },
+  "devDependencies": {
+    "nodemon" : "*"
+  }
 }
