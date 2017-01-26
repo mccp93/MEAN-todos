@@ -1,0 +1,12 @@
+body {
+    padding-top: 1%;
+}
+
+.todo-list{
+    margin: auto 0;
+}
+
+.table tbody tr > td.success {
+  background-color: #dff0d8 !important;
+}
+
