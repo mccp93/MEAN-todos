@@ -9,5 +9,14 @@ import { TaskService } from "./services/task.service";
 })
 
 export class AppComponent {
-    
+    title: string;
+
+    constructor(private _taskService: TaskService) {
+
+    }
+
+    addTask(event: any) {
+        event.preventDefault();
+        console.log(this.title);
+    }
 }

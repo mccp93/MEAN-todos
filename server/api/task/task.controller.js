@@ -35,7 +35,7 @@ exports.getOne = function (req, res) {
 exports.post = function (req, res, next) {
     var newTask = req.body;
 
-    if (!newTask.title || (newTask.isDone + '')) {
+    if (!newTask.title || !(newTask.completed + '')) {
         res.status(400);
         res.json({ "error": "Invalid data." });
     } else {
